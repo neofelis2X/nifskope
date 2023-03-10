@@ -28,9 +28,9 @@ AboutDialog::AboutDialog( QWidget * parent )
 	<p>A detailed changelog and the latest developmental builds of NifSkope 
 	<a href='https://github.com/jonwd7/nifskope/releases'>can be found here</a>.</p>
 	
-	<p>For the decompression of BSA (Version 105) files, NifSkope uses <a href='https://github.com/lz4/lz4'>LZ4</a>:<br>
+	<p>For the decompression of BSA (Version 1.9.4) files, NifSkope uses <a href='https://github.com/lz4/lz4'>LZ4</a>:<br>
 	LZ4 Library<br>
-	Copyright (c) 2011-2015, Yann Collet<br>
+	Copyright (c) 2011-2022, Yann Collet<br>
 	All rights reserved.</p>
 	
 	<p>For the generation of mopp code on Windows builds, NifSkope uses <a href='http://www.havok.com'>Havok(R)</a>:<br>

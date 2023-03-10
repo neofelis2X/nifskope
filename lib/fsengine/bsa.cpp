@@ -33,7 +33,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "bsa.h"
 #include "dds.h"
 #include "zlib/zlib.h"
-#include "lz4frame.h"
+#include "lz4/lz4frame.h"
 
 #include <QByteArray>
 #include <QDateTime>
@@ -509,7 +509,9 @@ bool BSA::fileContents( const QString & fn, QByteArray & content )
 						LZ4F_errorCode_t error = LZ4F_freeDecompressionContext( dCtx );
 						if ( error ) {
 							// TODO: Message logger
+							// maybe get LZ4F_getErrorName(error); output here 
 							qDebug() << fn << "Error Code: " << error;
+							
 						}
 
 						content = tmp;
