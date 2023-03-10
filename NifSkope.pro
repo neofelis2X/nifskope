@@ -354,8 +354,8 @@ zlib {
 }
 
 lz4 {
-    DEFINES += LZ4_STATIC XXH_PRIVATE_API
-
+    DEFINES += XXH_PRIVATE_API 
+	# do we need LZ4_STATIC_LINKING_ONLY ?
     HEADERS += \
         lib/lz4frame.h \
         lib/xxhash.h
